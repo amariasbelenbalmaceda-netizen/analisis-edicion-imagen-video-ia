@@ -33,4 +33,6 @@ Subí el archivo a este repositorio y documenté todo en este README.
 Perplexity, Cuaderno Gemini (NotebookLM), Claude, Netlify y GitHub.
 
 ## Archivos
-Los archivos Word están guardados en mi Drive personal. [si tu profe lo pide, agregá el link a la carpeta]
+Página: [https://app.netlify.com/projects/steady-llama-831c9f/overview]
+Drive: [https://drive.google.com/drive/folders/1l8ub-vIl5IqoD4Ro4t6Bc8htmkHAuf_X?usp=drive_link]
+
