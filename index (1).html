@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edición de imagen y video con IA</title>
+<style>
+:root{--azul:#1f3864;--claro:#2e74b5;--fondo:#f4f7fb;--texto:#222;--gris:#5b6770;--borde:#d9e1ec}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;color:var(--texto);background:var(--fondo)}
+header{background:linear-gradient(135deg,var(--azul),var(--claro));color:#fff;text-align:center;padding:48px 20px 40px}
+header h1{margin:0 0 8px;font-size:clamp(1.6rem,5vw,2.6rem);line-height:1.2}
+header p{margin:4px 0;opacity:.92}
+header .tags{font-style:italic;font-size:.95rem}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--borde);box-shadow:0 2px 6px rgba(0,0,0,.05)}
+nav ul{list-style:none;margin:0 auto;padding:0 12px;max-width:1000px;display:flex;gap:4px;overflow-x:auto;white-space:nowrap}
+nav a{display:block;padding:14px 12px;color:var(--azul);text-decoration:none;font-size:.92rem;font-weight:600;border-bottom:3px solid transparent}
+nav a:hover{border-bottom-color:var(--claro);background:var(--fondo)}
+main{max-width:1000px;margin:0 auto;padding:16px 16px 40px}
+section{background:#fff;border:1px solid var(--borde);border-radius:12px;padding:24px 22px;margin-top:20px;scroll-margin-top:64px}
+h2{margin:0 0 12px;color:var(--azul);font-size:1.5rem}
+h3{margin:18px 0 6px;color:var(--claro);font-size:1.1rem}
+p{margin:0 0 12px}
+ul{margin:0 0 12px;padding-left:22px}
+li{margin-bottom:4px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.ok h3{color:#2b7a4b}.no h3{color:#b5533c}
+.tabla{overflow-x:auto;border:1px solid var(--borde);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.92rem}
+th{background:var(--azul);color:#fff;text-align:left;padding:10px}
+td{padding:10px;border-top:1px solid var(--borde);vertical-align:top}
+tr:nth-child(even) td{background:var(--fondo)}
+td:first-child{font-weight:700}
+.nota{background:#eaf2fb;border-left:4px solid var(--claro);padding:10px 14px;border-radius:6px;font-size:.92rem;color:var(--gris)}
+footer{text-align:center;color:var(--gris);font-size:.88rem;padding:20px 16px 30px}
+@media(max-width:700px){.grid,.cols{grid-template-columns:1fr}section{padding:18px 16px}h2{font-size:1.3rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Edición de imagen y video con IA</h1>
+  <p>Análisis y cambios en la producción de contenido</p>
+  <p class="tags">Photoshop · Canva Magic Studio · CapCut · Runway</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#intro">Introducción</a></li>
+    <li><a href="#photoshop">Photoshop</a></li>
+    <li><a href="#canva">Canva</a></li>
+    <li><a href="#capcut">CapCut</a></li>
+    <li><a href="#runway">Runway</a></li>
+    <li><a href="#tabla">Comparativa</a></li>
+    <li><a href="#cambios">Qué cambió</a></li>
+    <li><a href="#reflexion">Reflexión</a></li>
+    <li><a href="#conclusion">Conclusión</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="intro">
+  <h2>Introducción</h2>
+  <p>En pocos años, la inteligencia artificial generativa entró en los programas que se usan para editar imágenes y videos. Ahora se puede pedir un cambio escribiendo lo que se quiere ("sacá a la persona del fondo", "hacé el video vertical") en lugar de hacerlo a mano paso a paso.</p>
+  <p>Este trabajo analiza cuatro herramientas: <strong>Photoshop</strong> (con IA generativa), <strong>Canva Magic Studio</strong>, <strong>CapCut</strong> y <strong>Runway</strong>. Para cada una se explica qué hace, sus ventajas y sus límites. Después se comparan y se ve qué cambió en la producción de contenido: tiempos, costos, calidad y empleos. Por último, hay una reflexión sobre cómo esto afecta a mi carrera.</p>
+</section>
+
+<section id="photoshop">
+  <h2>Photoshop con IA generativa</h2>
+  <p><strong>Qué hace:</strong> usa el motor de IA de Adobe (Firefly) para modificar imágenes escribiendo una indicación.</p>
+  <ul>
+    <li><strong>Relleno generativo:</strong> agrega, cambia o saca objetos dentro de una zona seleccionada.</li>
+    <li><strong>Ampliación generativa:</strong> extiende los bordes de una foto y crea lo que falta.</li>
+    <li><strong>Generar fondo:</strong> cambia el fondo por otra escena.</li>
+    <li><strong>Armonizar:</strong> ajusta luz y color para que un objeto o persona encaje en la escena.</li>
+    <li><strong>Eliminación generativa:</strong> borra personas, cables y otras distracciones.</li>
+  </ul>
+  <div class="cols">
+    <div class="ok"><h3>Ventajas</h3><ul>
+      <li>Acelera tareas repetitivas y ayuda a principiantes.</li>
+      <li>Permite probar muchas ideas rápido.</li>
+      <li>Es no destructivo: el resultado queda en una capa aparte y se puede corregir.</li>
+    </ul></div>
+    <div class="no"><h3>Límites</h3><ul>
+      <li>Puede inventar detalles mal hechos (manos, rostros, texto).</li>
+      <li>La luz y la perspectiva a veces quedan imperfectas.</li>
+      <li>Una imagen convincente no es necesariamente real, y eso importa en periodismo o publicidad.</li>
+      <li>Depende de créditos y del plan de Adobe.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="canva">
+  <h2>Canva Magic Studio</h2>
+  <p><strong>Qué hace:</strong> es un conjunto de herramientas de IA dentro de Canva, pensado para personas sin formación en diseño.</p>
+  <ul>
+    <li><strong>Magic Write:</strong> redacta y resume textos.</li>
+    <li><strong>Magic Design:</strong> arma propuestas de diseño o presentaciones.</li>
+    <li><strong>Magic Media:</strong> crea imágenes y videos cortos.</li>
+    <li><strong>Magic Edit, Eraser, Expand y Grab:</strong> editan fotos.</li>
+    <li><strong>Magic Switch:</strong> pasa un diseño a otro formato o idioma.</li>
+  </ul>
+  <div class="cols">
+    <div class="ok"><h3>Ventajas</h3><ul>
+      <li>Reúne texto, imagen, video y animación en un solo lugar.</li>
+      <li>Reduce el tiempo del primer borrador.</li>
+      <li>Adapta una misma pieza a varios formatos.</li>
+      <li>Ayuda a mantener la identidad visual con plantillas y kits de marca.</li>
+    </ul></div>
+    <div class="no"><h3>Límites</h3><ul>
+      <li>La IA puede inventar datos o cometer errores de ortografía.</li>
+      <li>Las imágenes generadas pueden tener detalles defectuosos.</li>
+      <li>Los resultados pueden no ser exclusivos ni estar libres de derechos de terceros.</li>
+      <li>Algunas funciones dependen del plan.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="capcut">
+  <h2>CapCut</h2>
+  <p><strong>Qué hace:</strong> es un editor de video para celular, web y computadora, muy usado para TikTok, Reels y Shorts.</p>
+  <ul>
+    <li>Subtítulos automáticos y transcripción.</li>
+    <li>Eliminación de fondo sin pantalla verde.</li>
+    <li><strong>AutoCut</strong> y <strong>AI Clipper</strong>: arman cortes y sacan fragmentos de videos largos.</li>
+    <li>Reencuadre automático, texto a voz, guion a video y plantillas inteligentes.</li>
+  </ul>
+  <div class="cols">
+    <div class="ok"><h3>Ventajas</h3><ul>
+      <li>Es rápido y se usa desde el celular.</li>
+      <li>Permite publicar con mucha frecuencia.</li>
+      <li>Los subtítulos automáticos mejoran la accesibilidad.</li>
+      <li>Se adapta fácil a las tendencias de las redes.</li>
+    </ul></div>
+    <div class="no"><h3>Límites</h3><ul>
+      <li>Las plantillas hacen que muchos videos se parezcan.</li>
+      <li>Los subtítulos pueden equivocarse con nombres y términos técnicos.</li>
+      <li>La eliminación de fondo falla a veces con el pelo o el movimiento rápido.</li>
+      <li>La música y las voces pueden tener restricciones de licencia.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="runway">
+  <h2>Runway</h2>
+  <p><strong>Qué hace:</strong> es una plataforma para generar, transformar y editar video con IA. Sus modelos <strong>Gen-2</strong> y <strong>Gen-3 Alpha</strong> fueron etapas clave, y hoy ofrece versiones más nuevas.</p>
+  <ul>
+    <li>Texto a video, imagen a video y video a video.</li>
+    <li>Control de la cámara y el movimiento.</li>
+    <li>Extender tomas, cambiar fondos o la iluminación y borrar objetos en un video.</li>
+  </ul>
+  <div class="cols">
+    <div class="ok"><h3>Ventajas</h3><ul>
+      <li>Abarata los prototipos: storyboards animados, pruebas de concepto, mood reels.</li>
+      <li>Permite crear planos muy caros o imposibles de filmar.</li>
+      <li>Combina generación y edición en la misma plataforma.</li>
+    </ul></div>
+    <div class="no"><h3>Límites</h3><ul>
+      <li>Los clips generados suelen ser cortos.</li>
+      <li>Los personajes y espacios pueden perder continuidad entre planos.</li>
+      <li>Fallan a veces las manos, el texto en escena y las interacciones físicas.</li>
+      <li>Consume créditos y no siempre sirve al primer intento.</li>
+      <li>Hay que revisar derechos de autor y el uso de rostros.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="tabla">
+  <h2>Tabla comparativa</h2>
+  <div class="tabla">
+    <table>
+      <thead><tr><th>Herramienta</th><th>Qué hace</th><th>Usuario ideal</th><th>Principal ventaja</th><th>Principal límite</th></tr></thead>
+      <tbody>
+        <tr><td>Photoshop</td><td>Retoque y composición de imágenes con IA (relleno, ampliación, armonizar)</td><td>Diseñadores, fotógrafos, editores profesionales</td><td>Control y precisión, con capas y trabajo no destructivo</td><td>Puede inventar detalles erróneos y depende de créditos</td></tr>
+        <tr><td>Canva Magic Studio</td><td>Crea y adapta diseños, textos, imágenes y presentaciones en un solo lugar</td><td>Emprendedores, estudiantes, docentes, equipos de marketing</td><td>Simplicidad y versatilidad: muchas piezas y formatos con pocos clics</td><td>Resultados a veces genéricos y con dudas de derechos</td></tr>
+        <tr><td>CapCut</td><td>Edita videos cortos con subtítulos automáticos, recortes y plantillas</td><td>Creadores de contenido, influencers, pequeños comercios</td><td>Rapidez y uso desde el celular</td><td>Videos muy parecidos entre sí y subtítulos con errores</td></tr>
+        <tr><td>Runway</td><td>Genera y transforma video desde texto, imágenes o clips</td><td>Cineastas, animadores, directores de arte</td><td>Control cinematográfico y prototipos sin filmar</td><td>Clips cortos y falta de continuidad entre planos</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="cambios">
+  <h2>Qué cambió en la producción de contenido</h2>
+  <h3>Tiempos</h3>
+  <p>Tareas que antes llevaban horas, como sacar objetos, ampliar una foto, subtitular o adaptar formatos, ahora se resuelven en segundos o minutos. Pero al ser más rápido, muchas empresas esperan más piezas: la IA aumenta la productividad, pero también puede aumentar el ritmo de trabajo.</p>
+  <h3>Costos</h3>
+  <p>Bajó el costo de entrada: una persona sola puede hacer lo que antes necesitaba varios especialistas. Ayuda sobre todo a estudiantes, emprendedores y pequeñas empresas. Pero siguen existiendo suscripciones, créditos, equipos y derechos de uso, y en América Latina las diferencias de conectividad y capacitación hacen que no todos aprovechen estas herramientas por igual.</p>
+  <h3>Calidad</h3>
+  <p>Subió la calidad del primer borrador, pero hay dos niveles: la <strong>calidad superficial</strong> (se ve atractivo a primera vista) y la <strong>calidad profesional</strong> (coherencia, precisión, identidad de marca y derechos en regla). El trabajo pasó a ser <strong>generación más supervisión</strong>: la IA propone y la persona elige, corrige y valida.</p>
+  <h3>Empleos</h3>
+  <p>Según la OIT, cerca de una cuarta parte del empleo mundial tiene algún grado de exposición a la IA generativa, pero la mayoría de los puestos probablemente se transformará en lugar de desaparecer. Para América Latina, un estudio estima entre 30% y 40% de empleo expuesto y solo entre 2% y 5% con posible automatización (exposición potencial, no despidos seguros).</p>
+  <ul>
+    <li><strong>Más expuestas:</strong> recortes simples, eliminación de fondos, redimensionar, subtitular, generar variantes.</li>
+    <li><strong>Difíciles de automatizar:</strong> estrategia, identidad de marca, narrativa original, contexto cultural, control de calidad y riesgos legales.</li>
+    <li><strong>Perfiles que ganan importancia:</strong> diseñador o editor con conocimientos de IA, director creativo, curador de contenido, responsable de identidad de marca.</li>
+  </ul>
+  <p class="nota">Paradoja: hacer contenido atractivo es más fácil, pero destacar entre tanto contenido atractivo es más difícil.</p>
+</section>
+
+<section id="reflexion">
+  <h2>Reflexión personal: impacto en mi carrera</h2>
+  <p>Como estudiante de técnico en recursos digitales y marketing, creo que estas herramientas me afectan de dos maneras.</p>
+  <p><strong>Lo positivo:</strong> puedo producir más y mejor con menos recursos. Con Canva puedo armar una campaña completa para un emprendimiento; con CapCut, editar videos para redes sin ser un editor profesional; con Photoshop y Runway, probar ideas visuales antes de invertir tiempo o dinero. Así puedo competir aunque trabaje solo o en un equipo chico.</p>
+  <p><strong>Lo que me preocupa:</strong> las tareas básicas, como recortar, redimensionar o subtitular, son justo las que la IA hace mejor. Si me quedo solo en ese nivel, mi trabajo vale menos. Además, si todos usamos las mismas plantillas, todo termina pareciéndose.</p>
+  <p><strong>Mi conclusión personal:</strong> lo que me va a diferenciar no es saber apretar botones, sino tener criterio: saber qué pedirle a la IA, elegir la mejor opción, corregir errores y cuidar que el resultado sea fiel a la marca y respete los derechos. Me conviene aprender estas herramientas y reforzar lo que la IA no resuelve sola: estrategia, creatividad, redacción con voz propia, análisis de datos de campañas y ética en el uso de contenido generado.</p>
+</section>
+
+<section id="conclusion">
+  <h2>Conclusión</h2>
+  <p>La IA generativa cambió la edición de imagen y video: desplazó el valor desde la ejecución técnica manual hacia la dirección creativa, la selección y la supervisión humana. Photoshop, Canva, CapCut y Runway reducen los tiempos, bajan la barrera de entrada y permiten experimentar mucho más. A cambio, traen desafíos: errores de detalle, contenido cada vez más parecido, más presión de producción y dudas sobre derechos y autenticidad. La tecnología no reemplaza al creador, pero sí redefine su perfil. Lo que marca la diferencia es el criterio, la narrativa, la voz propia y el control de calidad.</p>
+</section>
+
+</main>
+
+<footer>Fuentes: Investigación de Perplexity y Resumen del Cuaderno de Gemini.</footer>
+
+</body>
+</html>
